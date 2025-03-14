@@ -13,6 +13,7 @@
         <img src="img/myavatar.jpg" alt="Amadou Alpha Diaby" class="avatar">
         <h1>Amadou Alpha DIABY</h1>
         <p>Software Engineer | Full Stack Developer</p>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <nav>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
@@ -180,6 +181,13 @@
         <p>Email: <a href="mailto:diabyamadoualpha01@gmail.com">diabyamadoualpha01@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/amadou-alpha-diaby" target="_blank">LinkedIn Profile</a></p>
     </section>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector("nav");
+            nav.classList.toggle("active");
+        }
+
+    </script>
 
     <footer>
         <p>&copy; 2025 Amadou Alpha DIABY</p>
