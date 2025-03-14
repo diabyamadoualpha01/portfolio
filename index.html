@@ -13,7 +13,7 @@
         <img src="img/myavatar.jpg" alt="Amadou Alpha Diaby" class="avatar">
         <h1>Amadou Alpha DIABY</h1>
         <p>Software Engineer | Full Stack Developer</p>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <span class="menu-toggle">☰</span>  <!-- Menu hamburger -->
         <nav>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
@@ -182,10 +182,15 @@
         <p>LinkedIn: <a href="https://www.linkedin.com/in/amadou-alpha-diaby" target="_blank">LinkedIn Profile</a></p>
     </section>
     <script>
-        function toggleMenu() {
-            const nav = document.querySelector("nav");
-            nav.classList.toggle("active");
-        }
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+    });
+});
+
 
     </script>
 
